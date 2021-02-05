@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+			<meta name="author" content="Lebasora,John Jefferson F" />
+			<meta charset="utf-8" />
+			<title>Registration form</title>
+			<script src="button.js" defer></script>
+			<link rel="stylesheet" href="styles.css" />
+		</head>
+		
+		<body>
+			<header>
+				<h1 align="center"><u>Fill-up Form</u></h1>
+			</header>
+			
+			<main>
+				<form method="post" action="chapter8.html">
+				<div class="twoFormWrapper">
+				
+					<fieldset class="fieldOne">
+						<legend><h2>Identity</h2></legend>
+						<label>Last Name: </label><input name="lastName" type="text" required>
+						<label>First Name: </label><input name="firstName" type="text" required>
+						<label>Middle Name: </label><input name="middleName" type="text" required>
+						<label>BirthDay: </label><input name="birthday" type="date" required>
+						<label>Birth Place: </label><input name="text" type="address" required>
+						<label>Gender</label><br />
+						<select>
+							<option value="male">Male</option>
+							<option value="famale">Female</option>
+						</select><br />
+						Profile Picture<input type="file" required>
+
+					</fieldset>
+					
+					<fieldset class="fieldTwo">
+						<legend><h2>Contact</h2></legend>
+						<label>Mobile Number :</label><input name="number" placeholder="912 1234 123 (10digit)" 
+						type="tel" pattern="[0-9]{3} [0-9]{4} [0-9]{3}" required />
+						<label>Email :</label><input name="email" type="email" placeholder="john23@gmail.com" required /><br />
+						<label>Current Address: </label><input name="address" type="text" required><br />
+						<br />
+						<hr />
+						<label>Status:</label>
+						<span>Single  <input type="radio" value="male" name="status"></span>
+						<span>Married<input type="radio" value="female" name="status"></span>
+						<br />
+						<hr />
+						<a href="#" style="text-decoration:none">Terms and Condition<input type="checkbox" required /></a>
+					</fieldset>
+					
+				</div class="oneFormWrapper">	
+					<fieldset class="fieldThree">
+						<legend><h2>Creating Account</h2></legend>
+							<label>User Name: </label><input name="userName" placeholder="E.G:LebsGwapo143" style="width:100%" type="text"  required />
+							<label>Password: </label><input name="passwrod" style="width:100%" pattern=".{8,}" type="password"  placeholder="max-length of password must be 8 or more characters" required />
+					</fieldset>
+				
+					<fieldset class="fieldfour">
+						<legend><h2>FeedBack</h2></legend>
+						<textarea placeholder="Input Your Feedback here!! Thank You" class="textbox"></textarea>
+					</fieldset>
+					<span class="button">
+						<input type="reset" class="reset"/>
+						<input type="submit" class="submit"/>
+					</span>
+				</form>
+			
+			</main>
+			
+		</body>
+	</html>
